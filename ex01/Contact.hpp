@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/19 13:16:15 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/19 13:41:16 by jbrandt          ###   ########.fr       */
+/*   Created: 2025/06/19 13:23:10 by jbrandt           #+#    #+#             */
+/*   Updated: 2025/06/19 13:40:40 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-#define PHONEBOOK_HPP
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
 
 #endif
