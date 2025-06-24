@@ -6,7 +6,7 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:23:02 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/24 15:00:49 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/06/24 17:40:54 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ void Contact::setContact(const std::string& first, const std::string& last,
 	DarkestSecret = secret;
 }
 
-std::string getFirst() const { return FirstName; }
-std::string getLast() const { return LastName; }
-std::string getNick() const { return NickName; }
-std::string getNumber() const { return PhoneNumber; }
-std::string getSecret() const { return DarkestSecret; }
-bool isEmpty() const { return FirstName.empty(); }
+std::string Contact::getFirst() const { return FirstName; }
+std::string Contact::getLast() const { return LastName; }
+std::string Contact::getNick() const { return Nickname; }
+std::string Contact::getNumber() const { return PhoneNumber; }
+std::string Contact::getSecret() const { return DarkestSecret; }
+bool Contact::isEmpty() const { return FirstName.empty(); }

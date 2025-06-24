@@ -6,7 +6,7 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:16:15 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/24 15:42:07 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/06/24 19:17:53 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ public:
 	void addContact(const Contact& contact);
 	void searchContact() const;
 	void displayContact(int index) const;
+	int getContactCount() const;
 };
 
 #endif

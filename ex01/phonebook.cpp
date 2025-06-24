@@ -6,7 +6,7 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:16:02 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/24 17:02:16 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/06/24 20:02:49 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,6 @@ std::string	PhoneBook::limitString(const std::string& str) const
 
 void PhoneBook::searchContact() const
 {
-	if (contactCount == 0)
-	{
-		std::cout << "You have no Contacts!" << std::endl;
-		return;
-	}
 	std::cout << "|" << std::setw(10) << "Index" << "|"
 				<< std::setw(10) << "First Name" << "|"
 				<< std::setw(10) << "Last Name" << "|"
@@ -64,4 +59,9 @@ void PhoneBook::displayContact(int index) const
 	std::cout << "Nickname: "<< contacts[index].getNick() << std::endl;
 	std::cout << "Phone Number: "<< contacts[index].getNumber() << std::endl;
 	std::cout << "Darkest Secret: "<< contacts[index].getSecret() << std::endl;
+}
+
+int PhoneBook::getContactCount() const
+{
+	return contactCount;
 }

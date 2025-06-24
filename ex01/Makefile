@@ -6,14 +6,14 @@
 #    By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/19 13:15:25 by jbrandt           #+#    #+#              #
-#    Updated: 2025/06/19 13:16:21 by jbrandt          ###   ########.fr        #
+#    Updated: 2025/06/24 17:38:18 by jbrandt          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = phonebook.cpp
+SRC = PhoneBook.cpp Contact.cpp main.cpp
 OBJDIR = obj
 OBJ = $(addprefix $(OBJDIR)/, $(SRC:.cpp=.o))
-NAME = phonebook
+NAME = PhoneBook
 
 COMPILER = c++
 FLAGS = -Wall -Wextra -Werror -std=c++17
