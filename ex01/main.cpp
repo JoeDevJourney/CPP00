@@ -6,7 +6,7 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:39:21 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/24 20:00:29 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/06/26 13:10:36 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ int main()
 		}
 		else
 		{
-			std::cout << "Can't you read? Please enter ADD, Search or EXIT!" << std::endl;
+			std::cout << "Can't you read? Please enter ADD, SEARCH or EXIT!" << std::endl;
 		}
 	}
 	return (0);
