@@ -6,14 +6,14 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:16:15 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/27 12:49:01 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/06/27 14:01:15 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
-#include "Contact.hpp"
+#include "contact.hpp"
 #include <string>
 
 class PhoneBook {
