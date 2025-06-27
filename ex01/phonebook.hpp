@@ -6,7 +6,7 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:16:15 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/24 19:17:53 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/06/27 12:49:01 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 
 class PhoneBook {
 private:
-	Contact contacts[8];
-	int	currentIndex;
-	int	contactCount;
-	std::string limitString(const std::string& str) const;
+	Contact contacts[8];	//fixed array
+	int	currentIndex;		//Index where to store the next Contact
+	int	contactCount;		//total number of stored Contacts
+	std::string limitString(const std::string& str) const;	//is used to cut longer names
 
 public:
 	PhoneBook();
