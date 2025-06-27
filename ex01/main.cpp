@@ -6,13 +6,13 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:39:21 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/27 14:01:42 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/06/27 14:08:44 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
-#include "phoneBook.hpp"
+#include "PhoneBook.hpp"
 
 std::string getInput(const std::string& prompt)
 {
