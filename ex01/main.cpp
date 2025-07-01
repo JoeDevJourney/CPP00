@@ -6,7 +6,7 @@
 /*   By: jbrandt <jbrandt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 13:39:21 by jbrandt           #+#    #+#             */
-/*   Updated: 2025/06/27 14:08:44 by jbrandt          ###   ########.fr       */
+/*   Updated: 2025/07/01 13:19:35 by jbrandt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,27 @@
 #include <string>
 #include "PhoneBook.hpp"
 
-std::string getInput(const std::string& prompt)
+bool isAlpha(const std::string& str)
+{
+	for (char c : str)
+	{
+		if (!isalpha(c))
+			return (false);
+	}
+	return (true);
+}
+
+bool isDigit(const std::string& str)
+{
+	for (char c : str)
+	{
+		if (!isdigit(c))
+			return (false);
+	}
+	return (true);
+}
+
+std::string getInput(const std::string& prompt, bool onlyAlpha = false, bool onlyDigits = false)
 {
 	std::string input;
 	while (true)
@@ -27,6 +47,10 @@ std::string getInput(const std::string& prompt)
 		}
 		if (input.empty())
 			std::cout << "THIS FIELD SHALL NOT BE EMPTY!" << std::endl;
+		else if (onlyAlpha && !isAlpha(input))
+			std::cout << "ONLY LETTERS ALLOWED!" << std::endl;
+		else if (onlyDigits && !isDigit(input))
+			std::cout << "ONlY NUMBERS ALLOWED!" << std::endl;
 		else
 			break;
 	}
@@ -52,10 +76,10 @@ int main()
 		{
 			Contact newContact;
 			newContact.setContact(
-				getInput("Enter first name: "),
-				getInput("Enter last name: "),
+				getInput("Enter first name: ", true),
+				getInput("Enter last name: ", true),
 				getInput("Enter nickname: "),
-				getInput("Enter phone number: "),
+				getInput("Enter phone number: ", false, true),
 				getInput("Enter darkest secret: ")
 			);
 			PhoneBook.addContact(newContact);
